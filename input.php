@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	    }
    }
 	 // 入力エラーがなければ、次に重複アカウントのチェック
-	 if (empty($error)) {
+	if (empty($error)) {
       $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
       $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
       $pasword = htmlspecialchars($_POST['password'], ENT_QUOTES, 'UTF-8');
